@@ -87,6 +87,7 @@ select {
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 48px;
 }
 
 body {
@@ -108,6 +109,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: var(--font-size-5);
+  display: inline-block;
 }
 
 h2 {
@@ -127,11 +129,13 @@ h5 {
 }
 
 nav {
-    display: block;
+    display: grid;
+    grid-template-columns: max-content 1fr;
     position: sticky;
     top: 0;
-    background-color: hsl(214, 14%, 10%, 60%);
+    background-color: hsl(214, 14%, 10%, 90%);
     z-index: 2;
+    padding-inline: clamp(1rem, -21.1538rem + 34.6154vw, 10rem);
 }
 
 section {
@@ -186,6 +190,16 @@ ul {
   background-color: var(--teal-6);
 }
 
+.right {
+  float: right;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
 /* Block */
 
 .flow > * + * {
@@ -216,7 +230,7 @@ ul {
 .card-name {
   position: absolute;
   bottom: 0;
-  background-color: hsl(214, 14%, 10%, 80%);
+  background-color: hsl(214, 14%, 10%, 90%);
   width: 100%;
   padding-block: var(--size-2);
   text-align: center;
@@ -251,4 +265,78 @@ ul {
 
 .hero-video video {
   width: 100%;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--font-size-3);
+  height: var(--font-size-3);
+}
+
+.icon svg {
+  width: var(--font-size-2);
+  height: var(--font-size-2);
+}
+
+.icon-mobile-menu {
+  width: var(--font-size-9);
+  height: var(--font-size-9);
+
+  justify-self: right;
+}
+
+.icon-mobile-menu svg {
+  width: var(--font-size-6);
+  height: var(--font-size-6);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-2);
+  gap: var(--size-2);
+}
+
+#menu-mobile {
+  position: fixed;
+  width: 100%;
+  background-color: hsl(214, 14%, 10%, 90%);
+  padding-inline: var(--size-4);
+  padding-block: var(--size-6);
+  transform: translateX(0%);
+  transition: transform 300ms;
+  z-index: 1;
+}
+
+#menu-mobile.close {
+  transform: translateX(100%);
+}
+
+.menu-large {
+  display: flex;
+  gap: var(--font-size-5);
+  justify-self: right;
+}
+
+.small-title {
+  font-size: var(--font-size-4);
+  display: inline-block;
+}
+
+@media (width < 1024px) {
+  html {
+    scroll-padding-top: 40px;
+  }
+  
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+@media (width >= 1024px) {
+  .hidden-large {
+    display: none;
+  }
 }
