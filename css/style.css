@@ -192,6 +192,14 @@ ul {
   background-color: var(--teal-6);
 }
 
+.bg-orange-6 {
+  background-color: var(--orange-6);
+}
+
+.bg-jungle-6 {
+  background-color: var(--jungle-6);
+}
+
 .right {
   float: right;
 }
@@ -217,6 +225,7 @@ ul {
     margin-block: var(--size-10);
     row-gap: var(--size-10);
     column-gap: var(--size-11);
+    align-items: start
 }
 
 .card {
@@ -229,6 +238,10 @@ ul {
   border-radius: var(--radius-3);
   overflow: hidden;
   position: relative;
+}
+
+.card-image img {
+  width: 100%;
 }
 
 .card-name {
