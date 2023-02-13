@@ -216,6 +216,10 @@ ul {
   text-align: justify;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 /* Block */
 
 .flow > * + * {
