@@ -94,6 +94,8 @@ body {
     font-family: var(--font-sans);
     background-color: var(--gray-8);
     color: var(--gray-1);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
@@ -141,7 +143,7 @@ nav {
 section {
     text-align: center;
     padding-block: var(--size-3);
-    padding-inline: var(--size-6);
+    padding-inline: clamp(1.75rem, -30.8654rem + 50.9615vw, 15rem);
 }
 
 ul {
@@ -198,7 +200,9 @@ ul {
   display: none;
 }
 
-
+.text-center {
+  text-align: center;
+}
 
 /* Block */
 
@@ -208,11 +212,11 @@ ul {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--size-14), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--size-13), 1fr));
     place-items: center;
     margin-block: var(--size-10);
     row-gap: var(--size-10);
-    column-gap: var(--size-6);
+    column-gap: var(--size-11);
 }
 
 .card {
@@ -247,7 +251,7 @@ ul {
   line-height: var(--font-lineheight-4);
   border-radius: var(--radius-2);
   padding-inline: var(--size-2);
-  padding-block: var(--size-0);
+  padding-block: var(--size-00);
 }
 
 .card-description {
@@ -255,16 +259,19 @@ ul {
   padding-inline: var(--size-3);
 }
 
-.hero-video {
+.video {
   width: 100%;
-  overflow: hidden;
-  max-height: var(--size-16);
   display: grid;
   align-content: center;
 }
 
-.hero-video video {
+.video video {
   width: 100%;
+}
+
+.hero-video {
+  overflow: hidden;
+  max-height: var(--size-16);
 }
 
 .icon {
@@ -324,6 +331,29 @@ ul {
   font-size: var(--font-size-4);
   display: inline-block;
 }
+
+.panel {
+  background-color: hsl(214, 14%, 10%, 90%);
+  margin-block: var(--size-4);
+  border-radius: var(--radius-3);
+  padding-inline: var(--size-6);
+  padding-block: var(--size-4);
+  text-align: justify;
+}
+
+.project-info {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  margin-inline: auto;
+  justify-content: center;
+  gap: var(--size-2);
+}
+
+.project-info > :nth-child(2n + 1) {
+  font-weight: var(--font-weight-5);
+}
+
+/* Media Query */
 
 @media (width < 1024px) {
   html {
