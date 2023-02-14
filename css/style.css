@@ -286,8 +286,12 @@ ul {
   align-content: center;
 }
 
-.video video {
+.video video, .video iframe {
   width: 100%;
+}
+
+.video iframe {
+  aspect-ratio: 16 / 9;
 }
 
 .hero-video {
