@@ -150,6 +150,14 @@ ul {
   margin: 0;
 }
 
+p > a {
+  text-decoration: underline dotted;
+}
+
+p > a:hover {
+  text-decoration: underline solid;
+}
+
 /* Utilities */
 
 .bg-gray-6 {
