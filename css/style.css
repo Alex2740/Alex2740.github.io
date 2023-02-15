@@ -400,9 +400,17 @@ p > a:hover {
   width: 23%;
 }
 
+.images.csoy-camera > img {
+  width: 45%;
+}
+
 .images.rp-results > img {
   width: 60%;
   background-color: var(--gray-0);
+}
+
+.images.csoy-totem > img {
+  width: 45%;
 }
 
 /* Media Query */

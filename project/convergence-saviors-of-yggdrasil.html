@@ -131,20 +131,29 @@
                 <span>Lead programmer / Artist</span>
             </div>
             <h3>About Convergence: Saviors of Yggrasil</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam omnis voluptatibus ullam rem vero expedita maiores autem atque. Facilis ad neque blanditiis porro? Dicta cum vitae totam dolores assumenda impedit.</p>
+            <p>Convergence: Saviors of Yggdrasil is a project I did during my classes at UQAC. There were 4 people in the project. The game was created until a playable prototype was produced.</p>
             <div class="video">
                 <iframe src="https://www.youtube.com/embed/WeKKoL434ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <h4>Tilemap system</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor perspiciatis quisquam sequi necessitatibus quo obcaecati optio facilis reiciendis, eum, nam dolore commodi laborum reprehenderit placeat eos odio ullam sit?</p>
+            <p>With another person of the group, we implemented the tilemaps system. This system allows to contain all the information of the terrain (obstacles, units, ...). The system uses an overlay of tilemaps to create a hierarchy and separate the elements of the map (ground, walls, obstacles, decoration, ...). The system uses Unity Tilemaps to create the board object that the state machine will use to move and control the units.</p>
             <h4>Input system</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum quia perspiciatis dignissimos nisi atque eius laudantium asperiores, illo sed. Facere rerum sequi minus officiis est explicabo, distinctio recusandae! Incidunt.</p>
+            <p>I implemented an input system that controlled the state machine. The system uses events to communicate with the state machine. The use of events allows to support keyboard or mouse controls as the game can be played with keyboard only or mouse only.</p>
             <h4>Camera system</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum necessitatibus molestiae, recusandae, sint ullam velit dolorum incidunt id natus quos illum assumenda asperiores atque. Fugit voluptatem nulla mollitia debitis perspiciatis.</p>
+            <p>I implemented the camera system of the game. I started to add a functionality to move the camera. The camera can be moved by the player using the arrow keys. I then added a zoom feature so that the player can have an overview of the map.</p>
+            <p>After implementing these features, I realized that the player could lose the character he has to control. So I added a tracking system: the camera follows the character that is currently selected.</p>
+            <p>I then added a system that changes the colors when the camera changes world. A blue filter is added when the camera is in Midgard.</p>
+            <div class="images csoy-camera">
+                <img src="/assets/CSOY/camera-normal.png" alt="">
+                <img src="/assets/CSOY/camera-midgard.png" alt="">
+            </div>
             <h4>Teleportation mechanic</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum iusto vitae excepturi aliquid eveniet molestias, quod esse alias dolor cum nihil incidunt, corporis modi iste culpa necessitatibus itaque ratione inventore!</p>
+            <p>I implemented the teleportation mechanic. A character can only teleport if the tile in the other world is not already occupied. Also, teleporting to Midgard is done immediately, but teleporting the other way has a channeling. It is more difficult to return to the world of the gods. During the channeling, a blue totem is placed to prevent a unit from blocking the arrival tile.</p>
+            <div class="images csoy-totem">
+                <img src="/assets/CSOY/totem.png" alt="">
+            </div>
             <h4>Art</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nemo explicabo distinctio asperiores tenetur, animi assumenda quam nesciunt ducimus itaque sunt modi, vitae id veniam necessitatibus deleniti voluptatum iste sint?</p>
+            <p>The group didn't have an artist, so I created all the graphic assets of the game. For the style, I started with pixelart because it was the style I mastered the most. I was inspired by the graphic direction of the game Forager. I used the Aseprite software to create the spritessheets and tilesheets.</p>
         </div>
     </section>
     <section class="bg-gray-7">
