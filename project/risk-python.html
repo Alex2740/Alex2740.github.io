@@ -127,12 +127,26 @@
                 <span>Python</span>
             </div>
             <h3>About Risk Python</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam omnis voluptatibus ullam rem vero expedita maiores autem atque. Facilis ad neque blanditiis porro? Dicta cum vitae totam dolores assumenda impedit.</p>
-            <h4>Initial Prototype</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor perspiciatis quisquam sequi necessitatibus quo obcaecati optio facilis reiciendis, eum, nam dolore commodi laborum reprehenderit placeat eos odio ullam sit?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor perspiciatis quisquam sequi necessitatibus quo obcaecati optio facilis reiciendis, eum, nam dolore commodi laborum reprehenderit placeat eos odio ullam sit?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor perspiciatis quisquam sequi necessitatibus quo obcaecati optio facilis reiciendis, eum, nam dolore commodi laborum reprehenderit placeat eos odio ullam sit?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus dolor perspiciatis quisquam sequi necessitatibus quo obcaecati optio facilis reiciendis, eum, nam dolore commodi laborum reprehenderit placeat eos odio ullam sit?</p>
+            <p>Risk Python was a project I did during my prepa at Lycée Pierre Corneille. It was a research project on the theme of oceans. When the theme fell, I saw some friends working on the naval battle. I then wondered if I could not do it on another game. I then discovered the board game Risk. I noticed that there are different maps depending on the partnerships that have been made by Hasbro to release Risk games. I then wondered if the map, more specifically, the connections between the territories influenced the winning strategy. I then decided to create an AI playing Risk to answer this question.</p>
+            <h4>Probabilistic study</h4>
+            <p>First, I started to study the probability of winning a battle (when a player sends his troops on an enemy territory to capture it). I started by writing a recursive function that calculated the probability, unfortunately this function was too slow. As soon as there were more than 5 troops, the calculation took more than an hour. I then discovered dynamic programming, and modified my function to calculate using this approach. My computer then took about ten seconds to calculate a probability with more than a hundred troops. I was able to obtain the graph below showing the probability of winning a battle according to the number of attacking and defending troops.</p>
+            <h4>Risk game modeling and AI creation</h4>
+            <p>The Risk game was modeled using python object programming. There was one entity for the game, one for the board and one for the players. I then created the AI that controlled a player. I put a parameter to the AI that controlled its degree of aggressiveness. A degree of 1 corresponds to a player who would want to attack all the time whenever he could. A degree of 0 corresponds to a player who does not attack and only defends. I also added a negative degree for a player who plays randomly (the witness).</p>
+            <h4>Results</h4>
+            <p>To study the winning strategy, I chose four different maps: the Lord of the Rings map, the classic map, the classic map with frozen oceans and the map from The Walking Dead.</p>
+            <div class="images rp-maps">
+                <img src="/assets/RP/maps/Lord of the Rings.png" alt="">
+                <img src="/assets/RP/maps/Classique.png" alt="">
+                <img src="/assets/RP/maps/Frozen Classique.png" alt="">
+                <img src="/assets/RP/maps/The Walking Dead.png" alt="">
+            </div>
+            <p>The Lord of the Rings map has few connections and is almost linear while The Walking Dead map has many connections between territories.</p>
+            <p>The AI then played 200 games on each map with different degrees of aggressiveness. The following results were obtained.</p>
+            <div class="images rp-results">
+                <img src="/assets/RP/results.png" alt="">
+            </div>
+            <p>We observe that the aggressive strategy is winning on a map with few connections and that on the contrary the defensive strategy is winning on a map with many connections.</p>
+            <p>This project allowed me to discover the world of artificial intelligence and programming. It was my first computer project.</p>
         </div>
     </section>
     <section class="bg-gray-7">
