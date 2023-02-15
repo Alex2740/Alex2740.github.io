@@ -296,10 +296,11 @@ p > a:hover {
   width: 100%;
   display: grid;
   align-content: center;
+  justify-items: center;
 }
 
 .video video, .video iframe {
-  width: 100%;
+  width: 90%;
 }
 
 .video iframe {
