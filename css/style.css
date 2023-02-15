@@ -299,7 +299,11 @@ p > a:hover {
   justify-items: center;
 }
 
-.video video, .video iframe {
+.video video {
+  width: 100%;
+}
+
+.video iframe {
   width: 90%;
 }
 
