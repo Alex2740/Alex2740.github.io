@@ -418,6 +418,22 @@ p > a:hover {
   width: 45%;
 }
 
+.country-flag {
+  background-repeat: no-repeat;
+  background-image: url(/assets/FlagSprite.webp);
+  width: 16px;
+  height: 11px;
+  background-size: 304px auto;
+}
+
+.country-flag.english {
+  background-position: -126px -39px;
+}
+
+.country-flag.france {
+  background-position: 0px -52px;
+}
+
 /* Media Query */
 
 @media (width < 1024px) {
