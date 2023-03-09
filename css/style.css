@@ -395,6 +395,19 @@ p > a:hover {
   font-weight: var(--font-weight-5);
 }
 
+.play-link {
+  grid-column: 1 / span 2;
+  text-align: center;
+}
+
+.link {
+  display: inline;
+  padding-block: var(--size-1);
+  padding-inline: var(--size-2);
+  font-weight: var(--font-weight-5);
+  border-radius: var(--radius-2);
+}
+
 .images {
   display: flex;
   gap: var(--size-3);
