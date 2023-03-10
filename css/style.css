@@ -396,6 +396,7 @@ p > a:hover {
 }
 
 .play-link {
+  padding-top: var(--size-3);
   grid-column: 1 / span 2;
   text-align: center;
 }
