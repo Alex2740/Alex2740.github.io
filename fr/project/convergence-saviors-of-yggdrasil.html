@@ -125,43 +125,44 @@
         <div class="panel flow">
             <h2 class="text-center">Convergence: Saviors of Yggrasil</h2>
             <div class="project-info">
-                <span>Project Status</span>
-                <span>On hold</span>
-                <span>Project Type</span>
-                <span>University / group project</span>
-                <span>Project Duration</span>
-                <span>~3 months</span>
-                <span>Software Used</span>
+                <span>État du projet</span>
+                <span>Démo</span>
+                <span>Type de projet</span>
+                <span>Scolaire / projet de groupe</span>
+                <span>Durée du projet</span>
+                <span>~3 mois</span>
+                <span>Logiciels utilisés</span>
                 <span>Unity, Aseprite</span>
-                <span>Languages Used</span>
+                <span>Langages utilisés</span>
                 <span>C#</span>
-                <span>Primary Role(s)</span>
-                <span>Lead programmer / Artist</span>
+                <span>Rôle(s) principal(aux)</span>
+                <span>Programmeur principal / Artiste</span>
+                <span class="play-link"><a href="https://guillaume-polverelli.itch.io/convergence-saviors-of-yggdrasil" class="link bg-blue-8">Jouer au jeu !</a></span>
             </div>
-            <h3>About Convergence: Saviors of Yggrasil</h3>
-            <p>Convergence: Saviors of Yggdrasil is a project I did during my classes at UQAC. There were 4 people in the project. The game was created until a playable prototype was produced. This project helped me to increase my knowledge of Unity and C#.</p>
+            <h3>À propos de Convergence: Saviors of Yggrasil</h3>
+            <p>Convergence : Saviors of Yggdrasil est un projet que j'ai réalisé durant mes cours à l'UQAC. Il s'agissait d'un projet en équipe de 4. Le jeu a été créé jusqu'à ce qu'un prototype jouable soit produit. Ce projet m'a permis d'approfondir mes connaissances sur Unity et C#.</p>
             <div class="video">
                 <iframe src="https://www.youtube.com/embed/WeKKoL434ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <h4>Tilemap system</h4>
-            <p>With another person of the group, we implemented the tilemaps system. This system allows to contain all the information of the terrain (obstacles, units, ...). The system uses an overlay of tilemaps to create a hierarchy and separate the elements of the map (ground, walls, obstacles, decoration, ...). The system uses Unity Tilemaps to create the board object that the state machine will use to move and control the units.</p>
-            <h4>Input system</h4>
-            <p>I implemented an input system that controlled the state machine. The system uses events to communicate with the state machine. Using events allows to support keyboard or mouse controls. The game can be played with keyboard only or mouse only.</p>
-            <h4>Camera system</h4>
-            <p>I implemented the camera system of the game. I started to add a functionality to move the camera. The camera can be moved by the player using the arrow keys. Then, I added a zoom feature, now the player can have an overview of the map.</p>
-            <p>After implementing these features, I realized that the player could lose his character on the map. So I added a tracking system: the camera follows the currently selected character.</p>
-            <p>After I added a system to change colors when the camera goes in the other world. A blue filter is added when the camera is in Midgard.</p>
+            <h4>Système de tilemap</h4>
+            <p>Avec une autre personne du groupe, nous avons mis en place le système de tilemaps. Ce système permet de contenir toutes les informations du terrain (obstacles, unités, ...). Le système utilise une superposition de tilemaps pour créer une hiérarchie et séparer les éléments de la carte (sol, murs, obstacles, décoration, ...). Le système utilise les tilemaps de Unity pour créer l'objet "Board" que la machine à états utilisera pour déplacer et contrôler les unités.</p>
+            <h4>Système d'inputs</h4>
+            <p>J'ai implémenté un système d'entrée qui contrôle la machine à états. Le système utilise des événements pour communiquer avec la machine à états. L'utilisation d'événements permet de prendre en charge les commandes du clavier ou de la souris. Le jeu peut être joué avec le clavier uniquement ou la souris uniquement.</p>
+            <h4>Système de camera</h4>
+            <p>J'ai implémenté le système de caméra du jeu. J'ai commencé par ajouter une fonctionnalité pour déplacer la caméra. La caméra peut être déplacée par le joueur à l'aide des touches fléchées. Ensuite, j'ai ajouté une fonction de zoom, le joueur peut maintenant avoir une vue d'ensemble de la carte.</p>
+            <p>Après avoir mis en place ces fonctionnalités, j'ai réalisé que le joueur pouvait perdre son personnage sur la carte. J'ai donc ajouté un système de suivi : la caméra suit le personnage sélectionné.</p>
+            <p>Ensuite, j'ai ajouté un système pour changer les couleurs lorsque la caméra se rend dans l'autre monde. Un filtre bleu est ajouté lorsque la caméra se trouve à Midgard.</p>
             <div class="images csoy-camera">
                 <img src="/assets/CSOY/camera-normal.png" alt="">
                 <img src="/assets/CSOY/camera-midgard.png" alt="">
             </div>
-            <h4>Teleportation mechanic</h4>
-            <p>I implemented the teleportation mechanic. A character can be teleported if the tile in the other world is not already occupied. Also, we decided to allow the teleportation to Midgard immediatly to the player. Teleporting in the other way has a channeling. It is more difficult to return to the world of the gods. During the channeling, a blue totem appears to prevent a unit from blocking the arrival tile.</p>
+            <h4>Mécanique de téléportation</h4>
+            <p>J'ai implémenté la mécanique de téléportation. Un personnage peut être téléporté si la tile dans l'autre monde n'est pas déjà occupée. De plus, nous avons décidé de permettre au joueur de se téléporter immédiatement à Midgard. La téléportation dans l'autre sens a un effet de canalisation. Il est plus difficile de retourner dans le monde des dieux. Pendant la canalisation, un totem bleu apparaît pour empêcher une unité de bloquer la tile d'arrivée.</p>
             <div class="images csoy-totem">
                 <img src="/assets/CSOY/totem.png" alt="">
             </div>
             <h4>Art</h4>
-            <p>The group didn't have an artist to create the design, so I created all the graphic assets of the game. For the style, I started with pixelart because it was the style I mastered the most. I was inspired by the graphic direction of the game Forager. I used the Aseprite software to create the spritessheets and tilesheets.</p>
+            <p>Le groupe n'avait pas d'artiste pour créer le design, j'ai donc créé tous les éléments graphiques du jeu. Pour le style, on a choisi le pixelart car c'est le style que je maîtrise le mieux. Je me suis inspiré de la direction graphique du jeu Forager. J'ai utilisé le logiciel Aseprite pour créer les spritessheets et les tilesheets.</p>
         </div>
     </section>
     <section class="bg-gray-7">
