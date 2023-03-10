@@ -299,16 +299,15 @@ p > a:hover {
   justify-items: center;
 }
 
-.video video {
+.video > video {
   width: 100%;
 }
 
-.video iframe {
+.video > iframe {
   width: 90%;
-}
-
-.video iframe {
   aspect-ratio: 16 / 9;
+  border-radius: var(--radius-3);
+  overflow: hidden;
 }
 
 .hero-video {
@@ -413,6 +412,11 @@ p > a:hover {
   display: flex;
   gap: var(--size-3);
   justify-content: center;
+}
+
+.images > img {
+  border-radius: var(--radius-2);
+  overflow: hidden;
 }
 
 .images.rp-maps > img {
