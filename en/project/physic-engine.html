@@ -137,16 +137,16 @@
             <h3>About the Physic Engine</h3>
             <p>The physics engine was a project for a course at <a href="https://www.uqac.ca/">UQAC</a>. This project was my first project in C++ and allowed me to discover this language and the mechanisms of a physics engine.</p>
             <h4>Particles collision management</h4>
-            <p>In the first phases of the project, it was about particles. I implemented the management of collisions between them. The system detects the interpenetration and the contacts at rest. It then resolves the collisions using pulses.</p>
+            <p>In the first phases of the project, it was about particles. I implemented the management of collisions between them. The system detects the interpenetration and the contacts at rest. THen, it then resolves the collisions using pulses.</p>
             <div class="video pe-particules">
                 <video src="/assets/PE/particule collision.mp4" autoplay loop></video>
             </div>
             <h4>Rotation of a rigid body</h4>
-            <p>The next part of the project was about rigid bodies. I implemented the rotation of rigid bodies using quaternions. I added functions to help my classmates for operations with quaternions and conversions with vectors.</p>
+            <p>The next part of the project was about rigid bodies. I implemented the rotation of rigid bodies using quaternions. I added arthmetical functions to help my classmates for operations with quaternions and conversions with vectors.</p>
             <h4>Fine detection of contacts</h4>
-            <p>During the detection of rigid body contacts, there is first a broad phase and then a narrow phase. This division allows to increase the performances as the narrow phase are very greedy in resources.</p>
+            <p>During the detection of rigid body contacts, there is a first broad phase and then a narrow phase. This division allows to increase the performances because the narrow phase are very greedy in resources.</p>
             <p>For the fine detection, I implemented detection between two spheres, a sphere and a plane, a sphere and a box.</p>
-            <p>I also implemented the detection between two boxes using the separation axis test. You have to check that the projects of the boxes on some axes do not overlap.</p>
+            <p>I also implemented the detection between two boxes using the separation axis test. You have to check that the projection of the boxes do not overlap on some axes.</p>
         </div>
     </section>
     <section class="bg-gray-7">
