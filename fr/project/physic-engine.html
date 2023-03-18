@@ -137,14 +137,14 @@
             <h3>À propos du Moteur Physique</h3>
             <p>Le moteur physique était un projet dans le cadre d'un cours à l'<a href="https://www.uqac.ca/">UQAC</a>. Il s'agissait d'un projet en équipe de 4. Ce projet a été mon premier projet en C++ et m'a permis de découvrir ce langage ainsi que les mécanismes d'un moteur physique.</p>
             <h4>Gestion des collisions entre particules</h4>
-            <p>Dans les premières phases du projet, il était question de particules. J'ai implémenté la gestion des collisions entre ces dernières. Le système détecte l'interpénétrations et les contacts au repos. Il résout ensuite les collisions à l'aide d'impulsions.</p>
+            <p>Dans les premières phases du projet, il était question de particules. J'ai implémenté la gestion des collisions entre ces dernières. Le système détecte l'interpénétration et les contacts au repos. Il résout ensuite les collisions à l'aide d'impulsions.</p>
             <div class="video pe-particules">
                 <video src="/assets/PE/particule collision.mp4" autoplay loop></video>
             </div>
             <h4>Rotation d'un corps rigide</h4>
-            <p>La suite du projet portait sur les corps rigides. J'ai implémenté la rotation des corps rigides en utilisant les quaternions. J'ai rajouté des fonctions pour aider mes camarades pour les opérations avec les quaternions et les conversions avec les vecteurs.</p>
+            <p>La suite du projet portait sur les corps rigides. J'ai implémenté la rotation des corps rigides en utilisant les quaternions. J'ai rajouté des fonctions arithmétiques pour aider mes camarades pour les opérations avec les quaternions et les conversions avec les vecteurs.</p>
             <h4>Détection fine des contacts</h4>
-            <p>Lors de la détection des contacts des corps rigides, il y a d'abord une phase de détection grossière puis une détection plus fine. Ce découpage permet d'augmenter les performances comme les détections fines est très gourmandes en ressources.</p>
+            <p>Lors de la détection des contacts des corps rigides, il y a d'abord une phase de détection grossière puis une détection plus fine. Ce découpage permet d'augmenter les performances comme la détection fine est très gourmande en ressources.</p>
             <p>Pour la détection fine, j'ai implémenté la détection entre deux sphères, une sphère et un plan, une sphère et une boîte.</p>
             <p>J'ai aussi implémenté la détection entre deux boîtes en utilisant le test de séparation des axes. Il s'agit de vérifier que les projets des boites sur certains axes ne se chevauchent pas.</p>
         </div>
