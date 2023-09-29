@@ -56,7 +56,7 @@
                 </span>
                 Contact
             </a>
-            <a href="/en/project/convergence-saviors-of-yggdrasil.html" class="menu-item">
+            <a href="/en/project/flatusine-fallout.html" class="menu-item">
                 <span class="icon country-flag english"></span>
                 English
             </a>
@@ -116,53 +116,46 @@
             </span>
             Contact
         </a>
-        <a href="/en/project/convergence-saviors-of-yggdrasil.html" class="menu-item" onclick="ToggleMobileMenu()">
+        <a href="/en/project/flatusine-fallout.html" class="menu-item" onclick="ToggleMobileMenu()">
             <span class="icon country-flag english"></span>
             English
         </a>
     </div>
     <section>
         <div class="panel flow">
-            <h2 class="text-center">Convergence: Saviors of Yggrasil</h2>
+            <h2 class="text-center">Flatusine Fallout</h2>
             <div class="project-info">
                 <span>État du projet</span>
-                <span>Démo</span>
+                <span>Publié</span>
                 <span>Type de projet</span>
                 <span>Scolaire / projet de groupe</span>
                 <span>Durée du projet</span>
                 <span>~3 mois</span>
                 <span>Logiciels utilisés</span>
-                <span>Unity, Aseprite</span>
+                <span>Unity</span>
                 <span>Langages utilisés</span>
                 <span>C#</span>
                 <span>Rôle(s) principal(aux)</span>
-                <span>Programmeur principal / Artiste</span>
-                <span class="play-link"><a href="https://guillaume-polverelli.itch.io/convergence-saviors-of-yggdrasil" class="link bg-blue-8">Jouer à la démo !</a></span>
+                <span>Programmeur principal</span>
+                <span class="play-link"><a href="https://alex2740.itch.io/flatusine-fallout" class="link bg-blue-8">Jouer au jeu !</a></span>
             </div>
-            <h3>À propos de Convergence: Saviors of Yggrasil</h3>
-            <p>Convergence : Saviors of Yggdrasil est un projet que j'ai réalisé durant mes cours à l'<a href="https://www.uqac.ca/">UQAC</a>. Il s'agissait d'un projet en équipe de 4. Le jeu a été créé jusqu'à ce qu'un prototype jouable soit produit. Ce projet m'a permis d'approfondir mes connaissances sur Unity et C#.</p>
+            <h3>À propos de Flatusine Fallout</h3>
+            <p>Flatusine Fallout est un projet que j'ai réalisé durant mes cours à l'<a href="https://www.uqac.ca/">UQAC</a>. Il s'agissait d'un projet en équipe de 4. Ce projet m'a permis d'approfondir, mes connaissances sur les jeux multijoueurs et les Scriptable de Unity.</p>
             <div class="video">
-                <iframe src="https://www.youtube.com/embed/WeKKoL434ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/H6TDHyaE-Jk?si=0bFJV7kjMqG7FLNh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <h4>Système de tilemap</h4>
-            <p>Avec une autre personne du groupe, nous avons mis en place le système de tilemaps. Ce système permet de contenir toutes les informations du terrain (obstacles, unités, ...). Le système utilise une superposition de tilemaps pour créer une hiérarchie et séparer les éléments de la carte (sol, murs, obstacles, décoration, ...). Le système utilise les tilemaps de Unity pour créer l'objet "Board" que la machine à états utilisera pour déplacer et contrôler les unités.</p>
-            <h4>Système d'inputs</h4>
-            <p>J'ai implémenté un système d'entrée qui contrôle la machine à états. Le système utilise des événements pour communiquer avec la machine à états. L'utilisation d'événements permet de prendre en charge les commandes du clavier ou de la souris. Le jeu peut être joué avec le clavier uniquement ou la souris uniquement.</p>
-            <h4>Système de camera</h4>
-            <p>J'ai implémenté le système de caméra du jeu. J'ai commencé par ajouter une fonctionnalité pour déplacer la caméra. La caméra peut être déplacée par le joueur à l'aide des touches fléchées. Ensuite, j'ai ajouté une fonction de zoom, le joueur peut maintenant avoir une vue d'ensemble de la carte.</p>
-            <p>Après avoir mis en place ces fonctionnalités, j'ai réalisé que le joueur pouvait perdre son personnage sur la carte. J'ai donc ajouté un système de suivi : la caméra suit le personnage sélectionné.</p>
-            <p>Ensuite, j'ai ajouté un système pour changer les couleurs lorsque la caméra se rend dans l'autre monde. Un filtre bleu est ajouté lorsque la caméra se trouve à Midgard.</p>
-            <div class="images csoy-camera">
-                <img src="/assets/CSOY/camera-normal.png" alt="">
-                <img src="/assets/CSOY/camera-midgard.png" alt="">
+            <h4>Déplacement du joueur</h4>
+            <p>Pour le déplacement du joueur, j'ai implémenté un système de déplacement avec le nouveau système d'input de Unity. Ce nouveau système est plus flexible et permet d'avoir plusieurs schémas pour les touches. Cela m'a permis de rendre le jeu jouable au clavier/souris, mais aussi à la manette.</p>
+            <h4>Système de son</h4>
+            <p>Pour avoir une bonne ambiance dans un jeu, le son est important. J'ai implémenté un système qui peut joueur des variantes pour un même actions. Cela rajoute de la diversité. Ce système utilise les Scriptables de Unity pour pouvoir paramétrer et ajouter des sons facilement.</p>
+            <h4>Système d'abilités</h4>
+            <p>Pour ajouter des pouvoirs au jeu, j'ai implémenté un système d'abilités utilisant les Scritables de Unity. Le système ajoute des états de manière temporaire ou permanente qui vont affecter les joueurs. Le chasseur et les mephitidaes ont chacun trois capacités différentes.</p>
+            <div class="images ff-abilities">
+                <img src="/assets/FF/ability-1.png" alt="">
+                <img src="/assets/FF/ability-2.png" alt="">
             </div>
-            <h4>Mécanique de téléportation</h4>
-            <p>J'ai implémenté la mécanique de téléportation. Un personnage peut être téléporté si la tile dans l'autre monde n'est pas déjà occupée. De plus, nous avons décidé de permettre au joueur de se téléporter immédiatement à Midgard. La téléportation dans l'autre sens a un effet de canalisation. Il est plus difficile de retourner dans le monde des dieux. Pendant la canalisation, un totem bleu apparaît pour empêcher une unité de bloquer la tile d'arrivée.</p>
-            <div class="images csoy-totem">
-                <img src="/assets/CSOY/totem.png" alt="">
-            </div>
-            <h4>Art</h4>
-            <p>Le groupe n'avait pas d'artiste pour créer le design, j'ai donc créé tous les éléments graphiques du jeu. Pour le style, on a choisi le pixelart car c'est le style que je maîtrise le mieux. Je me suis inspiré de la direction graphique du jeu Forager. J'ai utilisé le logiciel Aseprite pour créer les spritessheets et les tilesheets.</p>
+            <h4>Feedback visuel</h4>
+            <p>J'ai ajouté de nombreux feedback visuels pour les capacités. Les feedbacks permettent au joueur d'avoir un retour sur ces actions.</p>
         </div>
     </section>
     <section class="bg-gray-7">
