@@ -212,6 +212,10 @@ p > a:hover {
   background-color: var(--gray-0);
 }
 
+.bg-sand-6 {
+  background-color: var(--sand-6);
+}
+
 .right {
   float: right;
 }
