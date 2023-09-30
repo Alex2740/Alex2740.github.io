@@ -452,6 +452,10 @@ p > a:hover {
   width: 50%;
 }
 
+.images.tso-quests > img {
+  width: 60%;
+}
+
 .country-flag {
   background-repeat: no-repeat;
   background-image: url(/assets/FlagSprite.webp);
