@@ -456,6 +456,14 @@ p > a:hover {
   width: 60%;
 }
 
+.images.ma1-achievement > img {
+  width: 50%;
+}
+
+.images.ma1-menu > img {
+  width: 50%;
+}
+
 .country-flag {
   background-repeat: no-repeat;
   background-image: url(/assets/FlagSprite.webp);
