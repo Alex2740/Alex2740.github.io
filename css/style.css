@@ -254,6 +254,7 @@ p > a:hover {
 
 .card {
     max-width: var(--size-14);
+    width: 90%;
     z-index: 0;
     text-align: start;
 }
@@ -266,6 +267,7 @@ p > a:hover {
 
 .card-image img {
   width: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .card-name {
